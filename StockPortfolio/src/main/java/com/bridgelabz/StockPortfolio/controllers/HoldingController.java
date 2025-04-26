@@ -17,6 +17,9 @@ public class HoldingController {
     @Autowired
     HoldingServiceImpl holdingService;
 
+
+    // This api is for create holding
+    
     @PostMapping("create-holding")
     public PortFolioResponseDto createHolding(@RequestBody HoldingDto dto){
         return holdingService.createHolding(dto);
